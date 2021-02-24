@@ -11,10 +11,9 @@ import org.junit.runner.RunWith;
 import org.training.selenium.cucumber.selenium.DriverUtils;
 
 @RunWith(Cucumber.class)
-    @CucumberOptions(plugin = { "html:target/cucumber/results.html", "json:results.json" },
+    @CucumberOptions(plugin = { "html:target/cucumber/results.html", "json:target/results.json" },
     features = "classpath:features",
     glue = "org.training.selenium.cucumber.steps"
-            ,tags = "@exercise"
     )
     public class RunCucumberTest {
     final static Logger LOGGER = LogManager.getLogger(RunCucumberTest.class);
