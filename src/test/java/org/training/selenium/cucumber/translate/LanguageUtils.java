@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 
 public class LanguageUtils {
 
-    private static Map<String, String> languageShortcuts = getLanguage();
+    private final static Map<String, String> languageShortcuts = getLanguage();
 
     public static String getShortName(String longName){
         return languageShortcuts.get(longName);

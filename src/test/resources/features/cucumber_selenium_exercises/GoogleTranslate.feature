@@ -1,7 +1,7 @@
 @selenium @translate
 Feature: As an internet user i want to be able to translate
 
-  Scenario:Simple google search
+  Scenario:Simple google translate
     Given I am on google translate
     When I translate from "english" to "french"
     Then I get for:
